@@ -9,3 +9,7 @@ localhost [127.0.0.1] 8119 open
 # check running program
 lsof -i :<port_number> 
 netstat -tuln | grep <port_number>.
+
+# connect to open port 
+nc -v 127.0.0.1 8119 
+
